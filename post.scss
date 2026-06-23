@@ -697,6 +697,11 @@ a.glossary.autolink.concept::after {
     margin-right: 5px;
 }
 
+/* Suppression puces des tabs page d'accueil */
+.nav-tabs .nav-item::marker {
+    content: none;
+}
+
 
 /* ============================================================
    7. CHAMPS PERSONNALISÉS DE COURS
