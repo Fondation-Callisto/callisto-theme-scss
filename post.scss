@@ -829,14 +829,6 @@ a.glossary.autolink.concept::after {
 }
 
 /* Champs à masquer sur la page de cours */
-.customfield_type_course {
-    display: none !important;
-}
-
-.customfield_duree {
-    display: none !important;
-}
-
 .customfield_catalogue {
     display: none !important;
 }
@@ -845,19 +837,7 @@ a.glossary.autolink.concept::after {
     display: none !important;
 }
 
-.customfield_type_course2 {
-    display: none !important;
-}
-
-.customfield_typecourse {
-    display: none !important;
-}
-
-.customfield_partenaire {
-    display: none !important;
-}
-
-.customfield_langue {
+.customfield_duration {
     display: none !important;
 }
 
