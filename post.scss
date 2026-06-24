@@ -149,7 +149,11 @@ mark {
     padding: 0.1em 0.2em;
 }
 
-
+/* Modif marges page CGU mentions légales */
+body#page-admin-tool-policy-view #page-content.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /* ============================================================
    2. NAVIGATION & HEADER
