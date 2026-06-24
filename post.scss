@@ -149,9 +149,9 @@ mark {
     padding: 0.1em 0.2em;
 }
 
-/* Modif marges page CGU mentions légales */
-body#page-admin-tool-policy-view #page-content.row,
-body#page-admin-tool-policy-view #page-header.row {
+/* Modif marges et padding pages autres que cours */
+body:not(.pagelayout-course):not(.pagelayout-incourse) #page-header.row,
+body:not(.pagelayout-course):not(.pagelayout-incourse) #page-content.row {
     margin-left: 0;
     margin-right: 0;
     padding-left: 15px;
