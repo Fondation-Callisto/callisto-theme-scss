@@ -236,11 +236,8 @@ li[data-key="siteadminnode"] .nav-link::before {
    ============================================================ */
 
 /* TEST IDP */
-.login-identityproviders a.btn:nth-of-type(n+3) {
-    display: none;
-  }
-  #obf-idp-search-wrapper {
-    margin: 0 0 0.75rem 0;
+#obf-idp-search-wrapper {
+    margin: 0.75rem 0;
   }
   #obf-idp-search {
     width: 100%;
@@ -253,6 +250,9 @@ li[data-key="siteadminnode"] .nav-link::before {
     font-size: 0.85rem;
     color: #666;
     margin-top: 0.25rem;
+  }
+  .obf-idp-hidden {
+    display: none !important;
   }
 
 
