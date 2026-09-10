@@ -235,9 +235,27 @@ li[data-key="siteadminnode"] .nav-link::before {
    3. AUTHENTIFICATION
    ============================================================ */
 
-/* Masquer les boutons IdP à partir du 3e (garder Sygefor + Renater) */
-.login-identityproviders a.btn:nth-of-type(n+3) {
-    display: none;
+/* AFFICHAGE FILTRÉ IDP */
+#obf-idp-search-wrapper {
+    margin: 0.75rem 0;
+}
+
+#obf-idp-search {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#obf-idp-search-count {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+.obf-idp-hidden {
+    display: none !important;
 }
 
 
