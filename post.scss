@@ -239,21 +239,23 @@ li[data-key="siteadminnode"] .nav-link::before {
 #obf-idp-search-wrapper {
     margin: 0.75rem 0;
 
-  #obf-idp-search {
-    width: 100%;
-    max-width: 320px;
-    padding: 0.4rem 0.6rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  #obf-idp-search-count {
-    font-size: 0.85rem;
-    color: #666;
-    margin-top: 0.25rem;
-  }
-  .obf-idp-hidden {
-    display: none !important;
-  }
+    #obf-idp-search {
+        width: 100%;
+        max-width: 320px;
+        padding: 0.4rem 0.6rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #obf-idp-search-count {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 0.25rem;
+    }
+
+    .obf-idp-hidden {
+        display: none !important;
+    }
 }
 
 /* ============================================================
@@ -1147,9 +1149,14 @@ details[open] summary {
 
 /* Cards — zoom au survol */
 .card {
-    overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
+}
+
+/* Rogner l'image agrandie, uniquement sur les cartes avec image en tête
+   (pas sur les blocs Moodle, qui sont aussi des .card et contiennent des menus) */
+.card:has(> .card-img-top, > a > .card-img-top) {
+    overflow: hidden;
 }
 
 .card .card-img-top {
