@@ -419,9 +419,10 @@ li[data-key="siteadminnode"] .nav-link::before {
     font-weight: 500;
 }
 
-/* Masquer les infos d'activités dans le résumé de section */
+/* Masquer les infos d'activités dans le résumé de section 
+(!important nécessaire pour surcharger l'utilitaire .d-flex de Bootstrap)*/
 .section-summary-activities {
-    display: none;
+    display: none !important;
 }
 
 /* Tableau des notes — scroll horizontal */
