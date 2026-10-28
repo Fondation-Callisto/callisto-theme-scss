@@ -1199,20 +1199,17 @@ details[open] summary {
     width: 100% !important;
 }
 
-/* Video YouTube responsive */
-.video-responsive-youtube {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.video-responsive-youtube iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
+/* Vidéos intégrées responsive (16:9) sans div englobante */
+iframe[src*="canal-u.tv"],
+iframe[src*="youtube.com"],
+iframe[src*="youtube-nocookie.com"],
+iframe[src*="player.vimeo.com"],
+iframe[src*="dailymotion.com"],
+iframe[src*="prismes.univ-toulouse.fr"] {
+    display: block;
     width: 100%;
-    position: absolute;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
 /* Modal image avec scroll horizontal */
