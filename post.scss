@@ -509,6 +509,16 @@ a.glossary.autolink.concept::after {
     color: #fff;
 }
 
+.format-grid .grid-completion.grid-completion-colour-middle {
+    background-color: $color-text;
+    color: #fff;
+}
+
+.format-grid .grid-completion.grid-completion-colour-high {
+    background-color: $color-text;
+    color: #fff;
+}
+
 /* Format grille — modal */
 .format-grid #gridPopup .modal-dialog {
     max-width: 980px;
