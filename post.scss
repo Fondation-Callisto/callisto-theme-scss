@@ -406,6 +406,12 @@ li[data-key="siteadminnode"] .nav-link::before {
     border-radius: 0;
 }
 
+// Rétablit .list-unstyled dans le contenu des activités,
+// où Moodle impose list-style: disc aux <ul>.
+.course-content .activity-altcontent ul.list-unstyled {
+    list-style: none;
+}
+
 /* Résumé de section */
 #section-0 .course-description-item,
 .summarytext {
